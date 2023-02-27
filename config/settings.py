@@ -38,6 +38,7 @@ THIRD_PARTY_APPS = [
     "rest_framework",
     "django_summernote",
     "corsheaders",
+    "storages",
 ]
 
 CUSTOM_APPS = [
