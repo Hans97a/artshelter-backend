@@ -19,6 +19,7 @@ psycopg2-binary = "^2.9.5"
 django-storages = "^1.13.2"
 werkzeug = "^2.2.3"
 awsebcli = "^3.20.5"
+boto3 = "1.24.88"
 
 
 [tool.poetry.group.dev.dependencies]
