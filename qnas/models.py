@@ -15,6 +15,7 @@ class Question(TimeStampedModel):
         max_length=20, choices=MESSAGE_TYPE_CHOICES, verbose_name="문의 종류"
     )
     content = models.TextField(default="", verbose_name="문의 내용")
+    is_answered = models.BooleanField(default=False, verbose_name="답변 여부")
 
     def __str__(self):
         return self.title
