@@ -4,7 +4,7 @@ from common.models import TimeStampedModel
 # Create your models here.
 
 
-MESSAGE_TYPE_CHOICES = (("concert", "공연 문의"), ("edu", ("교육 문의")), ("etc", "기타"))
+MESSAGE_TYPE_CHOICES = (("concert", "공연 문의"), ("edu", ("교육 문의")), ("agen", "대행 문의"), ("etc", "기타"))
 
 
 class Question(TimeStampedModel):
