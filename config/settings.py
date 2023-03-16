@@ -33,6 +33,8 @@ ALLOWED_HOSTS = [
     ".elasticbeanstalk.com",
     "localhost",
     "127.0.0.1",
+    "artshelter-api.link",
+    "www.artshelter-api.link",
 ]
 
 
