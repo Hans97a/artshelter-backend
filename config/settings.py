@@ -181,6 +181,8 @@ CSRF_TRUSTED_ORIGINS = [
     "https://www.artshelter.co.kr",
     "https://art-shelter-uploads.s3.ap-northeast-2.amazonaws.com",
     "https://artshelter-backend-pro-dev.ap-northeast-2.elasticbeanstalk.com",
+    "https://artshelter-api.link",
+    "https://www.artshelter-api.link",
 ]
 CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:3000",
@@ -191,6 +193,8 @@ CORS_ALLOWED_ORIGINS = [
     "https://www.artshelter.co.kr",
     "https://art-shelter-uploads.s3.ap-northeast-2.amazonaws.com",
     "https://artshelter-backend-pro-dev.ap-northeast-2.elasticbeanstalk.com",
+    "https://artshelter-api.link",
+    "https://www.artshelter-api.link",
 ]
 CORS_ALLOW_CREDENTIALS = True
 
