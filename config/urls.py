@@ -17,6 +17,7 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
+from django_summernote.utils import get_attachment_model
 
 
 urlpatterns = [
@@ -30,7 +31,7 @@ urlpatterns = [
 
 admin.site.site_header = "아트쉘터 관리자 페이지"
 admin.site.site_title = "아트쉘터 관리자 페이지"
-
+admin.site.unregister(get_attachment_model())
 
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
