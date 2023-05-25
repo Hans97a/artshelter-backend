@@ -7,7 +7,6 @@ from . import models, serializers
 class QuestionView(APIView):
     def post(self, request):
         serializer = serializers.QuestionSerializer(data=request.data)
-        print(" ㅋㅋ", request.data)
         if serializer.is_valid():
             try:
                 serializer.save()
@@ -17,7 +16,9 @@ class QuestionView(APIView):
                     status=status.HTTP_201_CREATED,
                 )
             except Exception:
-                print("안되네")
-                return Response("ㅋㅋ")
+                return Response(
+                    {"ok": False, "detail": "serializer save error"},
+                    status=status.HTTP_400_BAD_REQUEST,
+                )
         else:
             return Response(serializer.errors)
